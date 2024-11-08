@@ -144,6 +144,8 @@ function Table() {
                                 }}
                                 key={column.id}
                                 id={column.field}
+                                onClick={() => highlightColumn(column.id)}
+                                className={selectedColumn === column.id ? 'highlight-column' : ''}
                             >
                                 {column.title}
                                 <button
