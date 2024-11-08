@@ -1,0 +1,137 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+table-style {
+  margin:  137; /* or margin: 0 auto 0 auto */
+}
+
+ table td ,th {
+  border: 1px solid black;
+  padding: 10px;
+}
+
+.highlight-row {
+  background-color: lightblue;
+}
+.highlight-column {
+  background-color: lightgreen;
+}
+.highlight-table {
+  background-color: lightcoral;
+}
+
+.table-container {
+  max-width: 100%;
+  overflow-x: auto;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.table-controls {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.table-btn {
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.table-btn:hover {
+  background-color: #0056b3;
+}
+
+.table-style {
+  width: 100%;
+  border-collapse: collapse;
+  overflow-x: auto;
+}
+
+.table-header,
+.table-cell {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.table-header {
+  position: relative;
+}
+
+.delete-btn {
+  padding: 4px 8px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background-color: #c82333;
+}
+
+.highlight-table {
+  background-color: #f8f9fa;
+}
+
+.highlight-column {
+  background-color: #e9ecef;
+  font-weight: bold;
+}
+
+.highlight-row {
+  background-color: #f1f3f5;
+}
+
+@media (max-width: 768px) {
+  .table-container {
+      padding: 10px;
+  }
+
+  .table-controls {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 5px;
+  }
+
+  .table-btn {
+      width: 100%;
+  }
+
+  .table-style,
+  .table-cell,
+  .table-header {
+      font-size: 0.9rem;
+      padding: 8px;
+  }
+}
+
+table tbody tr:first {
+  background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
